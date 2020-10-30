@@ -1,10 +1,9 @@
 '''
 FUNCTIONS TO PULL FOLLOWER DATA FROM TWITTER. EASY TO EDIT TO FIT CERTAIN USE CASES.
-
+Miles Latham (2020)
+latham.miles@gmail.com
 '''
 
-# TODO: Tweepy itself needs to be updated for python 3.7+. To use tweepy currently, you must be running <3.7 or set up a python 3.6 instance.
-# eagerly waiting for this to be fixed as of 20NOV.
 
 import tweepy
 import csv
@@ -32,14 +31,14 @@ def load_network(#ckey,
                  geocode
                  #date
                  ):
-    ckey = '6gzacV3VtATIB9zjv4mO7uyFb'
-    csecret = '4dXvO19H0J8IBwOZzP9hgkGBIb0maWo5ymEcnUVlxTgevr88B5'
+    ckey = ''
+    csecret = ''
 
     # The access tokens can be found on your applications's Details
     # page located at https://dev.twitter.com/apps (located
     # under "Your access token")
-    atoken = '1026458107390709760-hSEGIZki6EZFDpALoQ9ckN7AMAbHFs'
-    asecret = 'jR5rCr8ATJq6YWgposYanIJGOH6lBM3CVweIMF7J0JCTq'
+    atoken = ''
+    asecret = ''
     # setting up tweepy authorization with the above keys
     auth = tweepy.OAuthHandler(ckey, csecret)
     auth.set_access_token(atoken, asecret)
